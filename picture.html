@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <picture>
+        <!-- setelah kita belajar tentang image selanjutnya ada juga yang berfungsi sebagai gambaer
+     tetapi dia bisa menggunakan beberapa lokasi sesuai ukuran layar kita lanjutkan di contoh -->
+     
+     <!-- misalnya kita pertama memberi batas apabila layar minimal 500px maka akan keluar gambar1  maka-->
+      <source media="(max-width: 500px)" srcset="gambar1.jpg" style="width: 50%">
+
+      <!-- selanjutnya kita coba apabila layar minimal 1000px kita tampilkan gambar 2 -->
+       <source media="(min-width: 1000px)" srcset="gambar2.jpg" style="width: 50%">
+
+       <!-- dan juga apabila tidak memebuhi keduanya kita tampilakan gambar3 -->
+        <img src="gambar3.jpg" alt="default" style="width: 50%">
+    </picture>
+
+    <!-- dengan begini maka gambar bisa diatur dengan layar yang digunakan oleh user -->
+    
+</body>
+</html>
